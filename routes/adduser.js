@@ -27,7 +27,7 @@ router.post('/', function(req, res, next) {
   let siteUsers = JSON.parse(userData);
 
   //Adding the new user to the end of the converted array that was just read in from users.json
-  siteUsers.push(user);
+  siteUsers.push(user);//!!!!!!Error from hitting submit
 
   /**Now that the user has been added to the array, the JSON.stringify() method converts the JS array
   * into a string so that we can override the users.json file and write the updated array of objects to users.json file
